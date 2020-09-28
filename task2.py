@@ -10,3 +10,11 @@
 # - "positive"
 # - "negative"
 # - "zero"
+
+a = int(input("Give me a number\n"))
+if a < 0:
+    print("your number is negative")
+elif a > 0:
+    print("your number is positive")
+elif a ==0:
+    print("your number is zero")
