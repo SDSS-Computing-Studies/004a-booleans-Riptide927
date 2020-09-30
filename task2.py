@@ -11,7 +11,7 @@
 # - "negative"
 # - "zero"
 
-a = int(input("Give me a number\n"))
+a = float(input("Give me a number\n"))
 if a < 0:
     print("your number is negative")
 elif a > 0:
