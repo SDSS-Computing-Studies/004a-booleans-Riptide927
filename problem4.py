@@ -17,6 +17,7 @@ import math
 a = float(input("Give me one side of a triangle\n"))
 b = float(input("Give me another side of a triangle\n"))
 c = float(input("Give me another side of a triangle\n"))
+
 if a > b and a > c:
     C = a
     B = b
@@ -31,6 +32,14 @@ if c > b and c > a:
     A = a
 
 s = 100*((math.sqrt(A**2 + B**2))/C)
-
+#Right angle
 if int(s) in range (98,102) :
     print("that is a right triangle")
+# Obtuse and Acute
+else:
+    ang=((C**2)-(A**2)-(B**2))/(-2*A*B)
+    fang= math.acos(ang)
+    if fang > (math.pi/2):
+        print("that is an obtuse triangle")
+    else: 
+        print("that is an acute triangle")
