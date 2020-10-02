@@ -18,15 +18,15 @@ a = float(input("Give me one side of a triangle\n"))
 b = float(input("Give me another side of a triangle\n"))
 c = float(input("Give me another side of a triangle\n"))
 
-if a > b and a > c:
+if a >= b and a >= c:
     C = a
     B = b
     A = c
-if b > a and b > c:
+if b >= a and b >= c:
     C = b
     B = a
     A = c
-if c > b and c > a:
+if c >= b and c >= a:
     C = c
     B = b
     A = a
